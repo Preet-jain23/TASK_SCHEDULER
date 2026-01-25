@@ -59,7 +59,7 @@ void init_systick_timer(uint32_t Tick_hz);
 #define value1 1
 #define new2 1
 #define INTERRUPT_ENABLE()  do{__asm volatile ("MOV R0,#0x0"); asm volatile("MSR PRIMASK,R0"); } while(0)
-
+#define temp2 10
 uint32_t g_tick_count=0;
 
 #define TICK_HZ 1000U
